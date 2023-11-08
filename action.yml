@@ -1,6 +1,6 @@
-name: "Release Info Action"
-author: "Aaron Batilo"
-description: "An action to read release information of a given GitHub repository"
+name: "Release Info"
+author: "KD Puvvadi"
+description: "Provides release info of provided repo"
 branding:
   icon: "package"
   color: "gray-dark"
