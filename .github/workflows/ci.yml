@@ -15,5 +15,5 @@ jobs:
         id: latest_version
         uses: ./
         with:
-          owner: abatilo
-          repo: release-info-action
+          owner: kdpuvvadi
+          repo: release-info

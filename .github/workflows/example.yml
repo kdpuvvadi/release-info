@@ -9,10 +9,10 @@ jobs:
       - uses: actions/checkout@v3.3.0
       - name: Get Latest Release
         id: latest_version
-        uses: abatilo/release-info-action@v1.3.2
+        uses: kdpuvvadi/release-info@v1.0.0
         with:
-          owner: abatilo
-          repo: release-info-action
+          owner: kdpuvvadi
+          repo: release-info
       - name: Example of consumption of the output
         env:
           LATEST: ${{ steps.latest_version.outputs.latest_tag }}

@@ -1,9 +1,9 @@
-# release-info-action
+# release-info
 
-[![Actions Status](https://github.com/abatilo/release-info-action/workflows/ci/badge.svg)](https://github.com/abatilo/release-info-action/actions)
+[![Actions Status](https://github.com/kdpuvvadi/release-info/workflows/ci/badge.svg)](https://github.com/kdpuvvadi/release-info/actions)
 [![Latest
-release](https://img.shields.io/github/v/release/abatilo/release-info-action?include_prereleases)](https://github.com/abatilo/release-info-action/releases)
-[![License](https://img.shields.io/github/license/abatilo/release-info-action)](https://github.com/abatilo/release-info-action/blob/master/LICENSE)
+release](https://img.shields.io/github/v/release/kdpuvvadi/release-info?include_prereleases)](https://github.com/abatilo/release-info-action/releases)
+[![License](https://img.shields.io/github/license/kdpuvvadi/release-info)](https://github.com/kdpuvvadi/release-info/blob/main/LICENSE)
 
 A GitHub Action which fetches information about GitHub releases for you to use.
 
@@ -27,10 +27,10 @@ Example step
 ```
 - name: Get Latest Release
   id: latest_version
-  uses: abatilo/release-info-action@v1.3.0
+  uses: kdpuvvadi/release-info@v1.0.0
   with:
-    owner: abatilo
-    repo: release-info-action
+    owner: kdpuvvadi
+    repo: release-info
 ```
 
 No other setup is required to use this action.
@@ -46,13 +46,13 @@ jobs:
     name: Get Latest Release
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@main
       - name: Get Latest Release
         id: latest_version
-        uses: abatilo/release-info-action@v1.3.3
+        uses: kdpuvvadi/release-info@v1.0.0
         with:
-          owner: abatilo
-          repo: release-info-action
+          owner: kdpuvvadi
+          repo: release-info
       - name: Example of consumption of the output
         env:
           LATEST: ${{ steps.latest_version.outputs.latest_tag }}
@@ -61,4 +61,4 @@ jobs:
           echo "Version $LATEST was released at $LATEST_DATE"
 ```
 
-You can see an example of the invocation of this workflow by [clicking here](https://github.com/abatilo/release-info-action/actions?query=workflow%3AExample)
+You can see an example of the invocation of this workflow by [clicking here](https://github.com/kdpuvvadi/release-info/actions?query=workflow%3AExample)
